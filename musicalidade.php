@@ -11,13 +11,11 @@
            
     $greek_modes = array(1=>'Jônio',3=>'Frígio',5=>'Mixolídio');
 
-        foreach($scale as $chord=>$formation) {
-            foreach($formation as $degrees=>$notes) {
-                $ground = array(
-                    $formation[1] => array_combine($formation,$greek_modes)
-                );     
-            } 
-            print_r($ground);
+        foreach($scale as $notes) {
+                $improvise = array(
+                    $notes[1] => array_combine($notes,$greek_modes)
+                );
+            print_r($improvise);
         }
         
         
